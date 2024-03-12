@@ -23,7 +23,7 @@ def generate_waveform(prms):
     
     dP_artery = 0.36*PP*w*(np.cos(w*t) +\
                 np.cos(2*w*t) +\
-                3/4*np.cos(3*w*t)) #w added as mult, derivative wrong in the paper
+                3/4*np.cos(3*w*t)) #w added 
     return P_artery, dP_artery
 
 def cuff_model(prms, Pa, dPa):
